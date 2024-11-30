@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pufferpanel
+    env: docker
+    region: oregon
+    plan: standard
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PUFFERPANEL_PORT
+        value: "8080"
